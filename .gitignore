@@ -1,0 +1,39 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.so
+
+# Virtual environments
+.venv
+venv/
+ENV/
+
+# Data and Databases (추가적인 데이터 보안을 위해 제외 권장)
+data/*.db
+data/*.sqlite
+data/*.csv
+data/*.xlsx
+
+# Environment variables (비밀번호, API 키 등 포함 가능성)
+.env
+*.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific (임시 파일 및 도구 설정)
+scratch/
+.python-version
+uv.lock
+.agents/
