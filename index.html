@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemo Commercial Real Estate Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header class="animate-fade">
+            <h1>NEMO Real Estate Insights</h1>
+            <p>네모 상업용 부동산 매물 데이터 심층 분석 대시보드</p>
+        </header>
+
+        <!-- Summary Statistics -->
+        <section class="summary-grid animate-fade">
+            <div class="summary-card">
+                <h3>전체 매물 수</h3>
+                <div class="value">673<span class="unit">건</span></div>
+            </div>
+            <div class="summary-card">
+                <h3>평균 보증금</h3>
+                <div class="value">68,955<span class="unit">원</span></div>
+            </div>
+            <div class="summary-card">
+                <h3>평균 월세</h3>
+                <div class="value">5,346<span class="unit">원</span></div>
+            </div>
+            <div class="summary-card">
+                <h3>최고 인기 업종</h3>
+                <div class="value">카페 / 커피</div>
+            </div>
+        </section>
+
+        <!-- Price Analysis -->
+        <section class="viz-section animate-fade">
+            <h2>Price Architecture</h2>
+            <div class="viz-grid">
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/price_type_dist.png" alt="가격 유형 분포">
+                    </div>
+                    <div class="viz-content">
+                        <h3>시장 가격 체계 분포</h3>
+                        <p>상업용 부동산 시장은 월세 중심의 임대차 계약이 99% 이상을 차지하며, 매매 시장은 극도의 희소성을 보입니다. 이는 자산 소유보다 운영 효율성 중심의 시장임을 시사합니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/rent_dist.png" alt="월세 분포">
+                    </div>
+                    <div class="viz-content">
+                        <h3>월세 임대료 밀집도</h3>
+                        <p>평균 500만 원 내외의 구간에 가장 많은 매물이 포진해 있습니다. 이는 해당 지역 입점 업체들의 표준적인 운영 비용 기준점이 됩니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/deposit_dist.png" alt="보증금 분포">
+                    </div>
+                    <div class="viz-content">
+                        <h3>보증금 자본 규모 분석</h3>
+                        <p>대다수의 매물이 1억 미만 구간에 밀집되어 있으나, 고가 구간에도 지속적인 분포가 나타나 자본 규모에 따른 시장 양극화를 보여줍니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/premium_dist.png" alt="권리금 분포">
+                    </div>
+                    <div class="viz-content">
+                        <h3>권리금 및 영업 가치</h3>
+                        <p>권리금 평균이 보증금 평균을 상회하는 경우가 빈번하며, 이는 기존 상권의 인지도와 시설 가치가 매우 높게 평가받고 있음을 의미합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business & Category -->
+        <section class="viz-section animate-fade">
+            <h2>Business Ecosystem</h2>
+            <div class="viz-grid">
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/biz_large_freq.png" alt="업종 대분류">
+                    </div>
+                    <div class="viz-content">
+                        <h3>업종 대분류 생태계</h3>
+                        <p>기타업종(오피스 등)과 F&B 업종이 시장의 주축을 이룹니다. 직장인 배후 수요를 타겟으로 한 서비스 및 먹거리 인프라가 견고합니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/biz_middle_freq.png" alt="업종 중분류">
+                    </div>
+                    <div class="viz-content">
+                        <h3>세부 창업 트렌드</h3>
+                        <p>커피점/카페와 한식점의 강세가 뚜렷하며, 최근에는 팝업스토어나 스튜디오 용도의 다용도 점포 공급이 증가하는 추세입니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/rent_by_biz.png" alt="업종별 월세">
+                    </div>
+                    <div class="viz-content">
+                        <h3>업종별 지불 능력 비교</h3>
+                        <p>주류점과 일반음식점의 상위 임대료 구간이 높게 형성되어 있습니다. 이는 업종별 객단가와 수익 구조가 임대료 지불 능력과 직결됨을 보여줍니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/area_price_by_floor.png" alt="층별 평당가">
+                    </div>
+                    <div class="viz-content">
+                        <h3>수직적 공간 가치 평가</h3>
+                        <p>1층의 가치가 높지만, 루프탑이나 지하 스튜디오 등 특화 공간의 경우 층수를 뛰어넘는 평당 가치를 창출하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Correlation & Engagement -->
+        <section class="viz-section animate-fade">
+            <h2>Market Dynamics</h2>
+            <div class="viz-grid">
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/size_rent_scatter.png" alt="면적 대비 월세">
+                    </div>
+                    <div class="viz-content">
+                        <h3>면적 효율성 분석</h3>
+                        <p>면적과 임대료는 강한 양의 상관관계를 보입니다. 대형 매물일수록 건물 상태와 주차 편의성 등에 따른 가격 분산이 크게 나타납니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/view_fav_reg.png" alt="조회수 대비 찜">
+                    </div>
+                    <div class="viz-content">
+                        <h3>사용자 관심도 및 전환율</h3>
+                        <p>단순 조회수보다 '찜'으로 이어지는 매력도가 중요합니다. 가격 조건과 시각적 정보가 우수한 매물이 높은 전환율을 기록합니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/size_deposit_scatter.png" alt="면적 대비 보증금">
+                    </div>
+                    <div class="viz-content">
+                        <h3>입지 가치 vs 공간 규모</h3>
+                        <p>소형 면적임에도 높은 보증금을 형성하는 매물들은 '입지'의 힘을 증명합니다. 면적 한계를 뛰어넘는 역세권 프리미엄이 존재합니다.</p>
+                    </div>
+                </div>
+                <div class="viz-card">
+                    <div class="viz-image-wrapper">
+                        <img src="images/keyword_tfidf.png" alt="TF-IDF 키워드">
+                    </div>
+                    <div class="viz-content">
+                        <h3>핵심 마케팅 키워드</h3>
+                        <p>역세권, 인테리어 완비, 무권리 등이 시장의 주요 셀링 포인트입니다. 소비자들은 비용 절감과 즉시 영업 가능 여부에 민감하게 반응합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keyword Cloud -->
+        <section class="keyword-section animate-fade">
+            <h2>Market Hot Keywords</h2>
+            <div class="keyword-grid">
+                <span class="keyword-tag">#역삼동</span>
+                <span class="keyword-tag">#강남역</span>
+                <span class="keyword-tag">#역세권</span>
+                <span class="keyword-tag">#인테리어완비</span>
+                <span class="keyword-tag">#무권리</span>
+                <span class="keyword-tag">#초역세권</span>
+                <span class="keyword-tag">#상가임대</span>
+                <span class="keyword-tag">#카페창업</span>
+                <span class="keyword-tag">#오피스상권</span>
+                <span class="keyword-tag">#유동인구최고</span>
+                <span class="keyword-tag">#깔끔한사무실</span>
+                <span class="keyword-tag">#신논현역</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Nemo Real Estate Data Analysis Project. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;">Analyzed by Antigravity AI Engine</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple Intersection Observer for fade-in effect
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(20px)";
+            el.style.transition = "all 0.8s ease-out";
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
