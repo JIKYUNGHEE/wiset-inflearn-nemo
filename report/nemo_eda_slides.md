@@ -7,7 +7,7 @@ backgroundColor: #000000
 color: #00FF00
 style: |
   section {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'AppleSDGothicNeo-Regular', 'Malgun Gothic', 'Courier New', monospace;
     background: radial-gradient(circle, #2a0035 0%, #000000 100%);
     border: 4px solid #FF00FF;
     text-shadow: 2px 2px #000000, 0 0 10px #00FF00;
@@ -15,7 +15,7 @@ style: |
   h1 {
     color: #FF00FF;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 54px;
     border-bottom: 2px dashed #00FF00;
   }
   h2, h3 {
@@ -25,7 +25,7 @@ style: |
     color: #FF00FF;
   }
   section::after {
-    content: " [ SYSTEM: READY ] ";
+    content: " [ 시스템: 준비 완료 ] ";
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -34,38 +34,38 @@ style: |
   }
 ---
 
-# **🛸 NEMO REAL ESTATE EDA 2026**
-### [ RETRO-FUTURISM ANALYSIS ]
+# **🛸 네모 부동산 데이터 분석 2026**
+### [ 레트로-퓨처리즘 분석 리포트 ]
 
-> MISSION: ANALYZE GANGNAM-STATION NODES
-> STATUS: DECODING...
+> 미션: 강남역 핵심 노드 분석
+> 상태: 데이터 디코딩 중...
 
-Gemini CLI // Cyber-Analysis Unit
+Gemini CLI // 사이버 분석 유닛
 
 ---
 
-## **1. DATABASE OVERVIEW**
+## **1. 데이터베이스 개요**
 
-- **DATASET**: NEMO HYPER-PLATFORM
-- **NODES**: 673 ENTRIES FOUND
-- **VARS**: 40 DIMENSIONS
-- **TARGET**: DEPOSIT / RENT / PREMIUM
-- **LOCATION**: GANGNAM-YEOKSAM QUADRANT
+- **데이터셋**: 네모 하이퍼-플랫폼
+- **노드**: 673개의 데이터 탐지됨
+- **차원**: 40개의 변수 구성
+- **대상**: 보증금 / 월세 / 권리금
+- **위치**: 강남-역삼 쿼드런트
 
 <!--
 발표자 노트:
-Y2K 감성으로 새롭게 단장한 네모 부동산 EDA 발표를 시작합니다. 2000년대 초반의 사이버틱한 분위기로 데이터를 해석해 보겠습니다. 분석 대상은 강남과 역삼 지역의 673개 매물 노드입니다. 보증금과 월세, 권리금이라는 핵심 변수를 통해 이 거대한 데이터 생태계를 탐험해 보겠습니다.
+Y2K 감성으로 새롭게 단장한 네모 부동산 EDA 발표를 시작합니다. 2000년대 초반의 사이버틱한 분위기로 데이터를 해석해 보겠습니다. 분석 대상은 강남과 역삼 지역의 673개 매물 데이터입니다. 보증금과 월세, 권리금이라는 핵심 변수를 통해 이 거대한 데이터 생태계를 탐험해 보겠습니다.
 -->
 
 ---
 
-## **2. BUSINESS SECTOR LOGS**
+## **2. 비즈니스 섹터 로그**
 
-- **PRIMARY**: 'OTHERS' (48.3%) >> F&B >> SERVICE
-- **SUB-NODES**: CAFE / MULTI-USE / STARTUP-HUB
-- **ANALYSIS**: 
-  - HIGH FLEXIBILITY IN SPACE USAGE
-  - CAFE CLUSTERING DETECTED
+- **기본 분류**: '기타업종' (48.3%) >> 음식점 >> 서비스업
+- **서브 노드**: 카페 / 다용도 점포 / 창업 허브
+- **분석 결과**: 
+  - 공간 활용의 높은 유연성 확인
+  - 특정 구역 내 카페 클러스터링 감지
 
 <!--
 발표자 노트:
@@ -74,7 +74,7 @@ Y2K 감성으로 새롭게 단장한 네모 부동산 EDA 발표를 시작합니
 
 ---
 
-## **3. PRICE TYPE & SECTOR FREQ**
+## **3. 가격 유형 및 업종 빈도**
 
 <style>
 img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
@@ -82,8 +82,8 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ![가격 유형](../images/price_type_dist.png) ![업종 빈도](../images/biz_large_freq.png)
 
-- **MODE**: RENTAL ONLY (>99%)
-- **TRIANGLE**: OTHERS / FOOD / SERVICE
+- **운영 모드**: 임대 중심 (>99%)
+- **핵심 구조**: 기타 / 음식점 / 서비스업 삼각 편대
 
 <!--
 발표자 노트:
@@ -92,12 +92,12 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ---
 
-## **4. DEPOSIT & RENT MATRIX**
+## **4. 보증금 및 월세 매트릭스**
 
 ![보증금](../images/deposit_dist.png) ![월세](../images/rent_dist.png)
 
-- **CONCENTRATION**: < 100M DEPOSIT / 5M RENT
-- **CORRELATION**: **0.948** (ULTRA-STABLE)
+- **밀집 구간**: 보증금 1억 미만 / 월세 500만
+- **상관관계**: **0.948** (울트라 스테이블)
 
 <!--
 발표자 노트:
@@ -106,12 +106,12 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ---
 
-## **5. PREMIUM & SPACE RATIO**
+## **5. 권리금 및 공간 비율**
 
 ![권리금](../images/premium_dist.png) ![면적대비 월세](../images/size_rent_scatter.png)
 
-- **VALUATION**: PREMIUM AVG > DEPOSIT AVG
-- **ANOMALY**: HIGH RENT IN SMALL NODES (LOCATION VALUE)
+- **가치 평가**: 권리금 평균 > 보증금 평균
+- **특이 지점**: 소형 노드에서의 고액 월세 (입지 가치)
 
 <!--
 발표자 노트:
@@ -120,12 +120,12 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ---
 
-## **6. VERTICAL VALUE & USER REACTION**
+## **6. 수직적 가치 및 유저 반응**
 
 ![층별가치](../images/area_price_by_floor.png) ![조회수대비찜](../images/view_fav_reg.png)
 
-- **LEVEL**: UNDERGROUND & HIGH-FLOOR RE-VALUED
-- **CONVERSION**: TARGETING 'ALZZA' NODES
+- **레벨 분석**: 지하 및 고층 섹션의 가치 재평가
+- **전환율**: '알짜' 노드 타겟팅 필요성 증대
 
 <!--
 발표자 노트:
@@ -134,12 +134,12 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ---
 
-## **7. KEYWORD TF-IDF SCAN**
+## **7. 키워드 TF-IDF 스캔**
 
 ![키워드](../images/keyword_tfidf.png)
 
-- **TOP SCAN**: YEOKSAM / GANGNAM / STATION
-- **META**: NO-PREMIUM / INTERIOR / CLEAN
+- **탑 스캔**: 역삼동 / 강남역 / 역세권
+- **메타 데이터**: 무권리 / 인테리어 / 깔끔한
 
 <!--
 발표자 노트:
@@ -148,12 +148,12 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ---
 
-## **8. STRATEGIC PROTOCOL**
+## **8. 전략적 프로토콜**
 
-1. **SPACE**: MAXIMIZE VERTICAL VALUE (B1 / 3F+)
-2. **FINANCE**: PROTOCOL FOR HIGH PREMIUM LOANS
-3. **MARKETING**: USE TARGET KEYWORDS FOR HIGH CTR
-4. **HYBRID**: ADAPTIVE MULTI-USE SPACE DESIGN
+1. **공간**: 수직적 가치 극대화 (지하 / 3층 이상)
+2. **금융**: 고액 권리금 지원을 위한 금융 프로토콜
+3. **마케팅**: 타겟 키워드 활용을 통한 클릭률 제고
+4. **하이브리드**: 가변형 다목적 공간 설계 권장
 
 <!--
 발표자 노트:
@@ -162,5 +162,5 @@ img { width: 450px; border: 3px solid #00FFFF; box-shadow: 0 0 15px #00FFFF; }
 
 ---
 
-# **SYSTEM SHUTDOWN.**
-#### ANY QUESTIONS? [ ISSUE #1 ]
+# **시스템 셧다운.**
+#### 질문이 있으십니까? [ 이슈 #1 참조 ]
